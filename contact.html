@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أجيال بلا قات | اتصل بنا</title>
+
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-theme="light">
+  <!-- Header Section -->
+   <header role="banner" class="main-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo-link">
+          <img src="image/logo2.png" alt="شعار أجيال بلا قات" class="logo">
+        </a>
+        
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="main-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav role="navigation" aria-label="القائمة الرئيسية" id="main-menu">
+          <ul class="nav-list">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="project.html">المشاريع</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="search" id="searchInput" placeholder="ابحث هنا..." aria-label="بحث في الموقع" class="search-input">
+            <button class="search-btn" aria-label="بحث"><i class="fas fa-search"></i></button>
+          </div>
+          <button id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+          <button id="langToggle" aria-label="تغير اللغة">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="page-hero" style="background-image: url('image/contact-banner.jpg');">
+      <div class="container">
+        <h1>اتصل بنا</h1>
+        <p>نحن هنا للإجابة على استفساراتك واستقبال مقترحاتك</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>معلومات التواصل</h2>
+            
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>العنوان</h3>
+                <p>اليمن - تعز (الفرع الرئيسي) - شارع الأجينات</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>الهاتف</h3>
+                <p>+967 4 1234567</p>
+                <p>+967 777 123456</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>البريد الإلكتروني</h3>
+                <p>info@aghalblaqat.org</p>
+                <p>support@aghalblaqat.org</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>ساعات العمل</h3>
+                <p>الأحد - الخميس: 8 صباحاً - 4 مساءً</p>
+                <p>الجمعة والسبت: إجازة</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>أرسل رسالة</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">الموضوع</label>
+                <select id="subject" name="subject">
+                  <option value="inquiry">استفسار</option>
+                  <option value="suggestion">مقترح</option>
+                  <option value="complaint">شكوى</option>
+                  <option value="volunteer">تطوع</option>
+                  <option value="donation">تبرع</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">الرسالة</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div class="map-section">
+          <h2>موقعنا على الخريطة</h2>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d44.01234567890123!3d13.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA3JzI0LjQiTiA0NMKwMDAnNDkuNyJF!5e0!3m2!1sen!2sye!4v1234567890123!5m2!1sen!2sye" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        
+        <!-- Branches Section -->
+        <div class="branches-section">
+          <h2 class="section-title">فروعنا</h2>
+          <div class="branches-grid">
+            <div class="branch-card">
+              <h3>فرع صنعاء</h3>
+              <p><i class="fas fa-map-marker-alt"></i> شارع الزبيري، أمام مبنى الوزارات</p>
+              <p><i class="fas fa-phone"></i> +967 1 1234567</p>
+            </div>
+            
+            <div class="branch-card">
+              <h3>فرع عدن</h3>
+              <p><i class="fas fa-map-marker-alt"></i> شارع الجمهورية، كريتر</p>
+              <p><i class="fas fa-phone"></i> +967 2 1234567</p>
+            </div>
+            
+            <div class="branch-card">
+              <h3>فرع الحديدة</h3>
+              <p><i class="fas fa-map-marker-alt"></i> شارع 26 سبتمبر، المنارة</p>
+              <p><i class="fas fa-phone"></i> +967 3 1234567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer role="contentinfo" class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <img src="image/logo2 (3).png" alt="شعار أجيال بلا قات" class="footer-logo">
+          <p class="footer-description">منظمة مجتمعية تعمل على التوعية بمخاطر القات وتقديم بدائل إيجابية للشباب والمجتمع</p>
+          <div class="social-links">
+            <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="footer-heading">روابط سريعة</h3>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="project.html">المشاريع</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        
+         <div class="footer-contact">
+          <h3 class="footer-heading">تواصل معنا</h3>
+          <p><i class="fas fa-map-marker-alt"></i> اليمن  تعز - (الفرع الرئيسي) - شارع الأجينات. </p>
+          <p><i class="fas fa-phone"></i> www.gwq-ye.org</p>
+          <p><i class="fas fa-envelope"></i> info@aghalblaqat.org</p>
+        </div> 
+        
+        <div class="footer-newsletter">
+          <h3 class="footer-heading">النشرة البريدية</h3>
+          <p>اشترك ليصلك كل جديد عن أنشطتنا وبرامجنا</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <button type="submit" class="btn btn-primary">اشتراك</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 أجيال بلا قات. جميع الحقوق محفوظة.</p>
+        <div class="footer-policies">
+          <a href="#">سياسة الخصوصية</a>
+          <a href="#">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+
+</body>
+</html>
