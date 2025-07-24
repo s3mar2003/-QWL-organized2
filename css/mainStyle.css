@@ -487,6 +487,18 @@ img {
 }
 
 }
+/*muie header*/
+@media (min-width: 1200px) {
+  .menu-toggle {
+    padding: 12px;
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;  
+  }
+}
 /*  الصفحات الداخلية */
 .page-hero {
   height: 400px;

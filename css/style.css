@@ -97,7 +97,49 @@
   background-color: var(--color-accent);
   color: var(--text-light);
   transform: translateY(-3px);
+
 }
+
+/* زر القائمة الأساسي */
+.menu-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 15px;
+    color: var(--text-color);  
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  
+  /* لإمكانية الوصول */
+  outline: none;
+  position: relative;
+  z-index: 1000; 
+}
+
+/* أيقونة القائمة */
+.menu-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle[aria-expanded="true"] {
+  color: var(--primary-color);
+}
+.menu-toggle[aria-expanded="true"] i {
+  transform: rotate(90deg);
+}
+.menu-toggle:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.menu-toggle:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+
+/* من نحن-الصفحه الرئسيه */
 .about-section {
   padding: 60px 0 30px;
   margin-bottom: 40px; 
