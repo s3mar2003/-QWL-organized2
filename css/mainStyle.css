@@ -440,6 +440,8 @@ img {
     width: 100%;
   }
 
+
+  /* خصائص الفوتر */
   .footer-grid {
     grid-template-columns: 1fr;
   }
